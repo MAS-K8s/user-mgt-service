@@ -58,6 +58,6 @@ cg.Get("/swagger", api.SwaggerHandler)
 
 func DefaultMappings(cg fiber.Router) {
 	cg.Get("/", func(c *fiber.Ctx) error {
-		return c.JSON(map[string]string{"message": "User-Mgt-APP613 service is up and running", "version": "1.0"})
+		return c.JSON(map[string]string{"message": "User-Mgt service is up and running", "version": "1.0"})
 	})
 }
